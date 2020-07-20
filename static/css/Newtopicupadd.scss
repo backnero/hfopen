@@ -1,0 +1,206 @@
+.content_left {
+  width: 100%;
+  height: 100%;
+  & /deep/ ul {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    padding-inline-start: 0;
+    li {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      > label {
+        display: flex;
+        width: 5em;
+        font-weight: 500;
+      }
+      > span {
+        // width: 94%;
+        flex-grow: 1;
+      }
+    }
+    .tm_text {
+      align-items: flex-start;
+      > span {
+        > .tm_div {
+          width: 100%;
+        }
+      }
+      .el-button {
+        margin-top: 30px;
+        display: block;
+      }
+    }
+    .tmxx_content {
+      align-items: flex-start;
+      > label {
+        padding-top: 8px;
+        height: 100%;
+      }
+      > .array_div {
+        height: 100%;
+        > span {
+          display: block;
+          width: 100%;
+          height: auto;
+          margin-bottom: 25px;
+          > span {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            > font {
+              display: inline-block;
+              width: 37%;
+              margin-right: 20px;
+              font {
+                display: inline-block;
+                width: 4%;
+                font-weight: 500;
+              }
+              & /deep/ .el-input {
+                width: 96%;
+              }
+            }
+            > .buttons {
+              margin-right: 15px;
+            }
+          }
+          > div {
+            .avatar-uploader {
+              display: inline-block;
+              margin-left: 1.5%;
+            }
+          }
+        }
+        .last {
+          > span {
+            width: 39%;
+            text-align: right;
+            display: block;
+          }
+        }
+      }
+    }
+    .kd_li {
+      & /deep/ .el-input:first-child {
+        width: 20%;
+      }
+      & /deep/ .el-input:nth-of-type(2) {
+        width: 6%;
+      }
+    }
+    .fx_li {
+      align-items: flex-start;
+    }
+    li:last-child {
+      > label {
+        height: 1px;
+      }
+      span {
+        span {
+          width: 37%;
+          display: block;
+          text-align: right;
+        }
+      }
+    }
+  }
+  // & /deep/.el-select {
+  //   > .el-input {
+  //     > .el-input__inner {
+  //       height: 35px;
+  //     }
+  //   }
+  // }
+  .buttons {
+    padding: 8px 8px;
+  }
+  & /deep/.el-textarea {
+    width: 37%;
+    margin-right: 15px;
+  }
+
+  .iconimger {
+    font-size: 2em;
+    color: #d06d68;
+    cursor: pointer;
+  }
+  .iconimg {
+    margin-left: 5px;
+    font-size: 2em;
+    color: #87bfbc;
+    cursor: pointer;
+  }
+  .avatar-uploader {
+    display: inline-block;
+  }
+  .avatar-uploader .el-upload {
+    display: inline-block;
+    border: 1px dashed #cecbcb;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    .avatar-uploader-icon {
+      font-size: 28px;
+      color: #8c939d;
+      width: 136px;
+      height: 136px;
+      line-height: 136px;
+      text-align: center;
+    }
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409eff;
+  }
+  & /deep/ .el-upload--picture-card {
+    width: 138px;
+    height: 138px;
+    line-height: 138px;
+  }
+  .A:hover .delete_icon {
+    display: block;
+  }
+  .B:hover .delete_icon {
+    display: block;
+  }
+  .C:hover .delete_icon {
+    display: block;
+  }
+  .D:hover .delete_icon {
+    display: block;
+  }
+  .E:hover .delete_icon {
+    display: block;
+  }
+  .imgr_i {
+    width: 136px;
+    height: 136px;
+    display: block;
+    .avatar {
+      width: 136px;
+      height: 136px;
+      border-radius: 6px;
+      display: block;
+      position: absolute;
+    }
+    .delete_icon {
+      z-index: 999;
+      width: 136px;
+      height: 136px;
+      position: relative;
+      display: none;
+    }
+    .icondelete {
+      position: absolute;
+      cursor: pointer;
+      right: 0;
+      top: 0;
+      color: #d06d68;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.el-table{
+    width: 100%;
+    border: 1px solid #ebeef5;
+    & /deep/ .cell{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      & /deep/ .el-tag {
+          margin: 2px 4px;
+          border: none;
+      }
+      & /deep/ .el-button {
+        border: none;
+      }
+    }
+    & /deep/ th {
+      background-color: #ecf5ff;
+      color:#333333;
+      padding: 12px 0;
+      border: none;
+    }
+    & /deep/ .el-table__header-wrapper {
+      background-color: #ecf5ff;
+    }
+    & /deep/ td{
+      border: none;
+      border-bottom: 1px solid #ebeef5;
+      padding: 6px 0;
+    }
+}
